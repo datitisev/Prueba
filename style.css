@@ -1,0 +1,24 @@
+li {
+	list-style-type: none;
+	display: inline;
+    border:1px solid black;
+    background-color:black;
+}
+
+ul {
+    width:30%;
+    float:right;
+}
+
+header {
+    height:70px;
+    width:100%;
+    border:4px dotted green;
+    position:fixed;
+    top:0;
+}
+
+a {
+    color:white;
+    text-decoration:none;
+}
