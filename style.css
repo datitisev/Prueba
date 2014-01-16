@@ -15,10 +15,16 @@ header {
     width:100%;
     border:4px dotted green;
     position:fixed;
-    top:0;
 }
 
 a {
     color:white;
     text-decoration:none;
+}
+
+article {
+    top:200px;
+    height:100%;
+    float:right;
+    width:69%;
 }
