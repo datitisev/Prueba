@@ -1,4 +1,4 @@
-li {
+li.menu1 {
 	list-style-type: none;
 	display: inline;
     border:1px solid black;
@@ -15,9 +15,10 @@ header {
     width:100%;
     border:4px dotted green;
     position:fixed;
+    background-color:darkgray;
 }
 
-a {
+a.menu1 {
     color:white;
     text-decoration:none;
 }
@@ -27,4 +28,21 @@ article {
     height:100%;
     float:right;
     width:69%;
+}
+
+aside {
+    float:left;
+    width:30%;
+    background-color:gray;
+    height:100%;
+}
+
+#menu2 {
+    width:100%;
+    list-style-type:disc;
+}
+
+li.menu2 {
+    list-style-type: square;
+    font-weight:bolder;
 }
