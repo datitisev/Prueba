@@ -1,4 +1,4 @@
-li.menu1 {
+header ul li.menu1 {
 	list-style-type: none;
 	display: inline;
     border:1px solid black;
@@ -11,6 +11,7 @@ ul {
 }
 
 header {
+    top:0px;
     height:70px;
     width:100%;
     border:4px dotted green;
@@ -18,7 +19,7 @@ header {
     background-color:darkgray;
 }
 
-a.menu1 {
+header ul li a.menu1 {
     color:white;
     text-decoration:none;
 }
@@ -27,14 +28,16 @@ article {
     top:200px;
     height:100%;
     float:right;
-    width:69%;
+    width:79%;
 }
 
 aside {
     float:left;
-    width:30%;
+    width:20%;
+    top:77px;
     background-color:gray;
     height:100%;
+    position:fixed;
 }
 
 #menu2 {
@@ -42,7 +45,29 @@ aside {
     list-style-type:disc;
 }
 
-li.menu2 {
-    list-style-type: square;
+aside ul .menu2 {
     font-weight:bolder;
+}
+
+aside ul li a {
+    color:lightblue;
+}
+
+aside ul li a:visited {
+    color:lightgreen;
+}
+
+td {
+    border:2px dotted green;
+}
+
+
+
+th {
+    border:3px dashed darkblue;
+}
+
+table {
+    width:100%;
+    text-align:center;
 }
