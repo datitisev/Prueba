@@ -1,46 +1,77 @@
-header ul li.menu1 {
+header div {
+    float: left;
+}
+
+header ul.menu1 {
+    display: inline-block;
+    margin-top: 40px;
+    margin-right: 15px;
+}
+
+p {
+    margin-top: 0;
+    margin-left: 2px;
+    margin-right:2px;
+}
+
+video {
+    width: 350px;
+    height: 300px;
+    margin-top: 0;
+    margin-left: 5px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header ul.menu1 li.menu1 {
 	list-style-type: none;
 	display: inline;
     border:1px solid black;
     background-color:black;
 }
 
-ul {
-    width:30%;
-    float:right;
+ul.menu2 {
+    width:100%;
 }
 
 header {
+    text-align: right;
+    z-index: 9000;
+    position: fixed;
     top:0px;
     height:70px;
     width:100%;
     border:4px dotted green;
-    position:fixed;
     background-color:darkgray;
 }
 
-header ul li a.menu1 {
+section {
+    margin-top: 75px;
+}
+
+header ul.menu1 li a.menu1 {
     color:white;
     text-decoration:none;
 }
 
 article {
-    top:200px;
-    height:100%;
-    float:right;
-    width:79%;
+    position: relative;
+    margin-top: 0;
+    margin-left: 20%;
 }
 
 aside {
-    float:left;
     width:20%;
-    top:77px;
     background-color:gray;
     height:100%;
-    position:fixed;
+    position:absolute;
 }
 
-#menu2 {
+
+li#menu2 {
     width:100%;
     list-style-type:disc;
 }
@@ -70,4 +101,5 @@ th {
 table {
     width:50%;
     text-align:center;
+    margin-bottom: 0;
 }
