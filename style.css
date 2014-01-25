@@ -1,11 +1,12 @@
-header div {
-    float: left;
+header div.dMenu1 {
+    float: right;
 }
 
 header ul.menu1 {
+    text-align:right;
     display: inline-block;
-    margin-top: 40px;
-    margin-right: 15px;
+    margin-top: 30px;
+    margin-right: 10px;
 }
 
 p {
@@ -28,7 +29,7 @@ body {
 
 header ul.menu1 li.menu1 {
 	list-style-type: none;
-	display: inline;
+	display: inline-block;
     border:1px solid black;
     background-color:black;
 }
@@ -38,14 +39,14 @@ ul.menu2 {
 }
 
 header {
-    text-align: right;
+    text-align:left;
     z-index: 9000;
     position: fixed;
     top:0px;
     height:70px;
     width:100%;
     border:4px dotted green;
-    background-color:darkgray;
+    background-color:lightgreen;
 }
 
 section {
