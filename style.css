@@ -45,6 +45,8 @@ ul.menu2 {
 }
 
 header {
+    list-style:none;
+    text-decoration:none;
     text-align:left;
     z-index: 9000;
     position: fixed;
@@ -116,4 +118,35 @@ footer {
     background-color: lightgray;
     clear: both;
     text-align: center;
+}
+
+.submenu1 > li {
+    list-style-type: none;
+    float:left;
+}
+
+.submenu1 li a {
+    background:green;
+    color:#FFF;
+    display:block;
+    border:1px solid;
+    padding:10px 12px;
+}
+
+.submenu1 li a:hover {
+    background:lightgreen;
+}
+
+ul.menu1 li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+ul.menu1 li:hover > ul {
+    display: block;
+}
+
+ul.menu li ul li {
+    position: relative;
 }
