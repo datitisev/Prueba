@@ -30,7 +30,7 @@ body {
   padding: 0;
 }
 
-header ul.menu1 li.menu1 {
+ul.menu1 > li {
     padding-top:20px;
     width:200px;
     height:40px;
@@ -61,7 +61,7 @@ section {
     margin-top: 75px;
 }
 
-header ul.menu1 li a.menu1 {
+ul.menu1 li a {
     color:white;
     text-decoration:none;
 }
@@ -121,14 +121,21 @@ footer {
 }
 
 .submenu1 > li {
+    display:inline;
+    width:150px;
     list-style-type: none;
-    float:left;
+    position: relative;
+}
+
+.submenu1 {
+    margin: 0;
+    padding: 0;
 }
 
 .submenu1 li a {
     background:green;
     color:#FFF;
-    display:block;
+    display:inline;
     border:1px solid;
     padding:10px 12px;
 }
@@ -137,16 +144,15 @@ footer {
     background:lightgreen;
 }
 
-ul.menu1 li ul{
-    display: none;
-    position: absolute;
-    min-width: 140px;
+
+
+ul.menu1 li:hover .desplegar {
+    display: inline-block;
 }
 
-ul.menu1 li:hover > ul {
-    display: block;
-}
-
-ul.menu li ul li {
-    position: relative;
+.desplegar {
+    transition:all 2s ease;
+    display:none;
+    position:absolute;
+    background-color:red;
 }
