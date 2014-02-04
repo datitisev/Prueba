@@ -24,6 +24,10 @@ aside {
 	height:100%;
 	position:absolute;
 }
+#menu2 li {
+	text-align: justify;
+	width: 85%;
+}
 #menu2 {
 	width: 100%;
 }
