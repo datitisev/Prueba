@@ -119,11 +119,11 @@ li#submenu1 .desplegar .submenu1 > li {
 
 li#submenu:hover > .desplegar{
 	display:inline-block;
-	width:600px;
+	width:700px;
 	text-align: left;
-	font-size: 20px;
+	font-size: 25px;
 	margin-right: 300px;
-	height:auto;
+	height:50px;
 	background-color: green;
 	top: 50px;
 	left: -75px;
