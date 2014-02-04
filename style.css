@@ -1,158 +1,130 @@
-header div.dMenu1 {
-    float: center;
-}
-
-header ul.menu1 {
-    position:fixed;
-    margin-left:0;
-    margin-top:0;
-    top:7px;
-    left:500px;
-    text-align:center;
-    display: inline-block;
-}
-
-p {
-    margin-top: 0;
-    margin-left: 2px;
-    margin-right:2px;
-}
-
-video {
-    width: 350px;
-    height: 300px;
-    margin-top: 0;
-    margin-left: 5px;
-}
-
 body {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
+}
+article {
+	position: relative;
+	margin-top: 0;
+	margin-left: 20%;
+}
+table {
+	width: 50%;
+	text-align: center;
+	margin-bottom: 0;
+}
+th {
+	border: 2px dashed darkblue
+}
+td {
+    border: 3px dotted green
+}
+aside {
+	width: 20%;
+	background-color: lightblue;
+	height:100%;
+	position:absolute;
+}
+#menu2 {
+	width: 100%;
+}
+.menu2 {
+	width:100%;
+	font-weight:bolder;
+}
+.menu2 > a {
+	color:green;
+}
+.menu2 > a:visited {
+	color:darkgreen;
+}
+section {
+	margin-top:75px;
+}
+header {
+	text-decoration:none;
+	text-align:left;
+	z-index:9000;
+	position:fixed;
+	top:0;
+	height:70px;
+	width:100%;
+	border:4px dotted green;
+	background-color:lightgreen;
+}
+ul.menu1 {
+	position:fixed;
+	margin-left: 0;
+	margin-top: 0;
+	top: 7px;
+	left: 500px;
+	text-align:center;
+	display: inline-block;
+}
+li.menu1 > a {
+	color:white;
+	text-decoration:none;
+}
+.desplegar {
+	display:none;
+	transition: all 2s ease;
+	position:absolute;
+	text-align: center;
+	text-decoration: none;
 }
 
 ul.menu1 > li {
-    padding-top:20px;
-    width:200px;
-    height:40px;
-	list-style-type: none;
-	display: inline-block;
-    border:1px solid darkgreen;
-    background-color:green;
+	margin: 0;
+	padding: 0;
+	width: 0;
+	height: 0;
+	background-color: green;
+	padding-top: 20px;
+	width:200px;
+	height:40px;
+	list-style-type:none;
+	display:inline-block;
+	border:1px solid green;
 }
-
-ul.menu2 {
-    width:100%;
-}
-
-header {
-    list-style:none;
-    text-decoration:none;
-    text-align:left;
-    z-index: 9000;
-    position: fixed;
-    top:0px;
-    height:70px;
-    width:100%;
-    border:4px dotted green;
-    background-color:lightgreen;
-}
-
-section {
-    margin-top: 75px;
-}
-
-ul.menu1 li a {
-    color:white;
-    text-decoration:none;
-}
-
-article {
-    position: relative;
-    margin-top: 0;
-    margin-left: 20%;
-}
-
-aside {
-    width:20%;
-    background-color:lightblue;
-    height:100%;
-    position:absolute;
-}
-
-
-li#menu2 {
-    width:100%;
-    list-style-type:square;
-}
-
-aside ul .menu2 {
-    font-weight:bolder;
-}
-
-aside ul li a {
-    color:green;
-}
-
-aside ul li a:visited {
-    color:lightgreen;
-}
-
-td {
-    border:2px dotted green;
-}
-
-
-
-th {
-    border:3px dashed darkblue;
-}
-
-table {
-    width:50%;
-    text-align:center;
-    margin-bottom: 0;
-}
-
-footer {
-    font-family:DavidS, "Comic Sans MS";
-    background-color: lightgray;
-    clear: both;
-    text-align: center;
-}
-
-.submenu1 > li {
-    display:inline;
-    width:150px;
-    list-style-type: none;
-    position: relative;
-}
-
-.submenu1 {
-    margin: 0;
-    padding: 0;
-}
-
 .submenu1 li a {
-    background:green;
-    color:#FFF;
-    display:inline;
-    border:1px solid;
-    padding:10px 12px;
+	text-decoration: none;
+	color: lightblue:;
+}
+.submenu1 li a:visited {
+	color: lightblue;
+}
+.submenu1 li:hover a {
+	color: yellow;
+}
+.submenu1 {
+	margin:0;
+	padding:0;
+}
+.submenu1 li {
+	display: inline-block;
+	vertical-align: top;
+	zoom: 1; /* Fix for IE7 */
+	*display: inline; /* Fix for IE7 */
+	color:#FFF;
+	padding:10px 12px;
+}
+.submenu1 li:hover {
+	background-color:darkgreen;
+}
+li#submenu1 .desplegar .submenu1 > li {
+	width:150px;
+	height: 100%;
+	list-style-type:none;
+	position:relative;
 }
 
-.submenu1 li a:hover {
-    background:lightgreen;
-}
-
-
-
-ul.menu1 li:hover .desplegar {
-    display: inline-block;
-}
-
-.desplegar {
-    transition:all 2s ease;
-    display:none;
-    position:absolute;
-    background-color:red;
+li#submenu:hover > .desplegar{
+	display:inline-block;
+	width:600px;
+	text-align: left;
+	font-size: 20px;
+	margin-right: 300px;
+	height:auto;
+	background-color: green;
+	top: 50px;
+	left: -75px;
 }
