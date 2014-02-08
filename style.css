@@ -1,5 +1,5 @@
 body {
-    font-family:Helvetica;
+     font-family:Helvetica;
 	margin: 0;
 	padding: 0;
 }
@@ -23,7 +23,7 @@ td {
 aside {
 	margin-top:-5px;
 	width: 20%;
-	background-color: lightblue;
+	background-color: rgb(243, 156, 18);
 	height:100%;
 	position:absolute;
 }
@@ -39,10 +39,10 @@ aside {
 	font-weight:bolder;
 }
 .menu2 > a {
-	color:green;
+	color:rgb(142, 68, 173);
 }
 .menu2 > a:visited {
-	color:darkgreen;
+	color:rgb(155, 89, 182);
 }
 section {
 	margin-top:80px;
@@ -56,7 +56,7 @@ header {
 	height:70px;
 	width:100%;
 	border:4px dotted green;
-	background-color:rgb(39, 174, 96);
+	background-color:rgb(26, 188, 156);
 }
 ul.menu1 {
 	position:fixed;
@@ -78,13 +78,12 @@ ul.menu1 > li {
 	padding: 0;
 	width: 0;
 	height: 0;
-	background-color: rgb(26, 188, 156);
+	background-color: rgb(39, 174, 96);
 	padding-top: 20px;
 	width:200px;
 	height:40px;
 	list-style-type:none;
 	display:inline-block;
-	border:1px solid green;
 }
 .submenu1 li a {
 	text-decoration: none;
@@ -94,13 +93,13 @@ ul.menu1 > li {
 	color: rgb(241, 196, 15);
 }
 .submenu1 {
-     font-family: "Grutch Shaded", "Comic Sans MS";
+     font-family: GrutchShaded, "Comic Sans MS";
 	margin:0;
 	padding:0;
 }
 .submenu1 li {
-     transition: all 2s ease;
-     -webkit-transition: all 2s;
+     transition: all 3s ease;
+     -webkit-animation: all 3s;
 	display: none;
 	vertical-align: top;
 	zoom: 1; /* Fix for IE7 */
@@ -109,6 +108,8 @@ ul.menu1 > li {
 	padding:10px 12px;
 }
 .submenu1 li:hover {
+     transition: all 3s ease;
+     -webkit-animation: all 3s;
 	background-color:rgb(52, 152, 219);
 }
 li#submenu:hover .desplegar .submenu1 li {
@@ -117,8 +118,8 @@ li#submenu:hover .desplegar .submenu1 li {
 
 .desplegar {
 /*	display:none;*/
-	transition: all 2s ease;
-	-webkit-transition: all 2s; /* Safari */
+	transition: all 1s ease;
+	-webkit-transition: all 1s; /* Safari */
 	position:absolute;
 	text-align: center;
 	text-decoration: none;
@@ -132,6 +133,7 @@ li#submenu:hover .desplegar .submenu1 li {
 }
 
 li#submenu1:hover .desplegar .submenu1 > li {
+     transition: all 3s ease;
 	width:150px;
 	height: 100%;
 	list-style-type:none;
