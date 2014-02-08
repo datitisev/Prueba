@@ -1,4 +1,5 @@
 body {
+    font-family:Helvetica;
 	margin: 0;
 	padding: 0;
 }
@@ -55,7 +56,7 @@ header {
 	height:70px;
 	width:100%;
 	border:4px dotted green;
-	background-color:lightgreen;
+	background-color:rgb(39, 174, 96);
 }
 ul.menu1 {
 	position:fixed;
@@ -77,7 +78,7 @@ ul.menu1 > li {
 	padding: 0;
 	width: 0;
 	height: 0;
-	background-color: green;
+	background-color: rgb(26, 188, 156);
 	padding-top: 20px;
 	width:200px;
 	height:40px;
@@ -87,28 +88,31 @@ ul.menu1 > li {
 }
 .submenu1 li a {
 	text-decoration: none;
-	color: lightblue;
-}
-.submenu1 li a:visited {
-	color: lightblue;
+	color: rgb(52, 152, 219);
 }
 .submenu1 li:hover a {
-	color: yellow;
+	color: rgb(241, 196, 15);
 }
 .submenu1 {
+     font-family: Algerian EF, ;
 	margin:0;
 	padding:0;
 }
 .submenu1 li {
-	display: inline-block;
+     transition: all 2s ease;
+     -webkit-transition: all 2s;
+	display: none;
 	vertical-align: top;
 	zoom: 1; /* Fix for IE7 */
 	*display: inline; /* Fix for IE7 */
-	color:#FFF;
+	color:rgb(230, 126, 34);
 	padding:10px 12px;
 }
 .submenu1 li:hover {
-	background-color:darkgreen;
+	background-color:rgb(52, 152, 219);
+}
+li#submenu:hover .desplegar .submenu1 li {
+     display: inline-block;
 }
 
 .desplegar {
@@ -123,13 +127,11 @@ ul.menu1 > li {
 	background-color: green;
 	top: 50px;
 	left: -250px;
-	width: 1100px;
-	text-align: center;
-	font-size: 25px;
+	font-size: 20px;
 	margin-right: 300px;
 }
 
-li#submenu1 .desplegar .submenu1 > li {
+li#submenu1:hover .desplegar .submenu1 > li {
 	width:150px;
 	height: 100%;
 	list-style-type:none;
@@ -140,8 +142,13 @@ li#submenu:hover > .desplegar{
 /*    transition: all 2s ease;
     -webkit-transition: width 2s; /* Safari */
 	/*display:inline-block;*/
+     background-color:rgb(241, 196, 15);
 	height:50px;
 }
+.submenu1 ul {
+     background-color:rgb(46, 204, 113);
+}
+
 footer {
 	border-top:1px solid grey;
 	text-align:center;
