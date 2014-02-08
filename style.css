@@ -152,6 +152,7 @@ li#submenu:hover > .desplegar{
 }
 
 footer {
+     font-size: 10px;
 	border-top:1px solid grey;
 	text-align:center;
 }
