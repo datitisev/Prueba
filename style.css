@@ -73,6 +73,7 @@ li.menu1 > a {
 .desplegar {
 	display:none;
 	transition: all 2s ease;
+	-webkit-transition: all 2s; /* Safari */
 	position:absolute;
 	text-align: center;
 	text-decoration: none;
@@ -93,7 +94,7 @@ ul.menu1 > li {
 }
 .submenu1 li a {
 	text-decoration: none;
-	color: lightblue:;
+	color: lightblue;
 }
 .submenu1 li a:visited {
 	color: lightblue;
@@ -124,6 +125,8 @@ li#submenu1 .desplegar .submenu1 > li {
 }
 
 li#submenu:hover > .desplegar{
+    transition: all 2s ease;
+    -webkit-transition: width 2s; /* Safari */
 	display:inline-block;
 	width:1100px;
 	text-align: center;
