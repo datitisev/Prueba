@@ -70,14 +70,7 @@ li.menu1 > a {
 	color:white;
 	text-decoration:none;
 }
-.desplegar {
-	display:none;
-	transition: all 2s ease;
-	-webkit-transition: all 2s; /* Safari */
-	position:absolute;
-	text-align: center;
-	text-decoration: none;
-}
+
 
 ul.menu1 > li {
 	margin: 0;
@@ -117,6 +110,25 @@ ul.menu1 > li {
 .submenu1 li:hover {
 	background-color:darkgreen;
 }
+
+.desplegar {
+/*	display:none;*/
+	transition: all 2s ease;
+	-webkit-transition: all 2s; /* Safari */
+	position:absolute;
+	text-align: center;
+	text-decoration: none;
+	height: 0;
+	width: 1100px;
+	background-color: green;
+	top: 50px;
+	left: -250px;
+	width: 1100px;
+	text-align: center;
+	font-size: 25px;
+	margin-right: 300px;
+}
+
 li#submenu1 .desplegar .submenu1 > li {
 	width:150px;
 	height: 100%;
@@ -125,17 +137,10 @@ li#submenu1 .desplegar .submenu1 > li {
 }
 
 li#submenu:hover > .desplegar{
-    transition: all 2s ease;
+/*    transition: all 2s ease;
     -webkit-transition: width 2s; /* Safari */
-	display:inline-block;
-	width:1100px;
-	text-align: center;
-	font-size: 25px;
-	margin-right: 300px;
+	/*display:inline-block;*/
 	height:50px;
-	background-color: green;
-	top: 50px;
-	left: -250px;
 }
 footer {
 	border-top:1px solid grey;
