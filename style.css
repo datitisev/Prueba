@@ -97,7 +97,7 @@ ul.menu1 > li {
 	margin:0;
 	padding:0;
 }
-.submenu1 li {
+li#submenu .desplegar .submenu1 li {
      transition: all 3s ease;
      -webkit-animation: all 3s;
 	display: none;
