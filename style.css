@@ -1,12 +1,28 @@
+iframe {
+     border: 0px;
+}
+.container {
+     margin:0 auto;
+     width:960px;
+     position:relative;
+}
+.publicidad {
+     z-index:0;
+}
+h1 {
+     margin-top: 0;
+     padding-top: 5px;
+}
 body {
+     min-width:1125px;
      font-family:Helvetica;
 	margin: 0;
 	padding: 0;
 }
 article {
 	position: relative;
-	margin-top: 0;
-	margin-left: 23%;
+	margin-top: 5px;
+	margin-left: 28%;
 	margin-right:2%;
 }
 table {
@@ -21,18 +37,19 @@ td {
     border: 3px dotted #d35400;
 }
 aside {
-	margin-top:-5px;
-	width: 20%;
+	margin-top:0;
+	width: 27%;
 	background-color: rgb(243, 156, 18);
 	height:100%;
 	position:absolute;
 }
 #menu2 li {
 	text-align: justify;
-	width: 85%;
+	display: block;
 }
 #menu2 {
-	width: 100%;
+     padding: 5%;
+	width: 90%;
 }
 .menu2 {
 	width:100%;
@@ -45,12 +62,12 @@ aside {
 	color:rgb(155, 89, 182);
 }
 section {
-	margin-top:80px;
+	margin-top:75px;
 }
 header {
 	text-decoration:none;
-	text-align:left;
-	z-index:9000;
+	/* text-align:left; */
+	z-index:99999999999999999;
 	position:fixed;
 	top:0;
 	height:70px;
@@ -59,9 +76,10 @@ header {
 	background-color:#f39c12;
 }
 ul.menu1 {
+     min-width:608px;
 	position:fixed;
-	margin-left: 0;
-	margin-top: 0;
+	margin:0;
+	padding:0;
 	top: 7px;
 	left: 500px;
 	text-align:center;
@@ -99,18 +117,14 @@ ul.menu1 > li {
 	padding:0;
 }
 li#submenu .desplegar .submenu1 li {
-     transition: all 3s ease;
-     -webkit-animation: all 3s;
+     transition: all 2.5s ease;
+     -webkit-transition: all 2.5s;
 	display: none;
-	vertical-align: top;
-	zoom: 1; /* Fix for IE7 */
-	*display: inline; /* Fix for IE7 */
 	color:rgb(230, 126, 34);
 	padding:10px 12px;
+	overflow: hidden;
 }
 .submenu1 li:hover {
-     transition: all 3s ease;
-     -webkit-animation: all 3s;
 	background-color:rgb(52, 152, 219);
 }
 li#submenu:hover .desplegar .submenu1 li {
@@ -118,23 +132,22 @@ li#submenu:hover .desplegar .submenu1 li {
 }
 
 .desplegar {
-/*	display:none;*/
-	transition: all 1s ease;
-	-webkit-transition: all 1s; /* Safari */
+	transition: all 0.6s ease;
+	-webkit-transition: all 0.6s; /* Safari */
 	position:absolute;
 	text-align: center;
 	text-decoration: none;
 	height: 0;
-	width: 1100px;
+	width: 975px;
 	background-color: #3498db;
 	top: 50px;
 	left: -250px;
 	font-size: 20px;
 	margin-right: 300px;
+	overflow: hidden;
 }
 
 li#submenu1:hover .desplegar .submenu1 > li {
-     transition: all 3s ease;
 	width:150px;
 	height: 100%;
 	list-style-type:none;
@@ -142,9 +155,6 @@ li#submenu1:hover .desplegar .submenu1 > li {
 }
 
 li#submenu:hover > .desplegar{
-/*    transition: all 2s ease;
-    -webkit-transition: width 2s; /* Safari */
-	/*display:inline-block;*/
      background-color:rgb(241, 196, 15);
 	height:50px;
 }
