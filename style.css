@@ -10,6 +10,7 @@ iframe {
      margin:0 auto;
      width:960px;
      position:relative;
+     background-color: lightgreen;
 }
 .publicidad {
      z-index:0;
@@ -73,7 +74,7 @@ section {
 }
 header {
 	text-decoration:none;
-	/* text-align:left; */
+	text-align: center;
 	z-index:99999999999999999;
 	position:fixed;
 	top:0;
@@ -149,7 +150,7 @@ li#submenu:hover .desplegar .submenu1 li {
 	width: 975px;
 	background-color: #3498db;
 	top: 50px;
-	left: -250px;
+	left: -7px;
 	font-size: 20px;
 	margin-right: 300px;
 	overflow: hidden;
