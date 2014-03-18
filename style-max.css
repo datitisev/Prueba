@@ -2,9 +2,17 @@
 	display: none;
 }
 .ops {
+    padding: 10px;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
 	display: block;
 	font-family: "Comic Sans MS";
+}
+footer {
+    font-size: 15px;
+}
+footer img {
+    width: 65px;
+    height: 65px
 }
