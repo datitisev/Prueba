@@ -3,6 +3,9 @@
      text-align: right;
      /* padding-left: 247px; */
 }
+.dMenu1 .menu1 .color a, .dMenu1 .menu1 .color a:visited, .dMenu1 .menu1 .color {
+	color: rgb(46, 204, 113);
+}
 iframe {
      border: 0;
 }
