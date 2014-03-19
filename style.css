@@ -5,6 +5,8 @@
 }
 .dMenu1 .menu1 .color a, .dMenu1 .menu1 .color a:visited, .dMenu1 .menu1 .color {
 	color: rgb(46, 204, 113);
+	text-decoration: none;
+	font-weight: bolder;
 }
 iframe {
      border: 0;
